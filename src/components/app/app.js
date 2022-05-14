@@ -1,9 +1,10 @@
 import React from "react";
 
 import AppHeader from "../app-header";
-import "../app-header/app-header.css";
 import SearchPanel from "../search-panel";
-import "../search-panel/search-panel.css";
+import PostStatusFilter from "../post-status-filter";
+import PostList from "../post-list";
+import PostAddForm from "../post-add-form/";
 
 const App = () => {
   return (
@@ -11,7 +12,10 @@ const App = () => {
       <AppHeader />
       <div className="search-panel d-flex">
         <SearchPanel />
+        <PostStatusFilter />
       </div>
+      <PostList />
+      <PostAddForm />
     </div>
   );
 };
