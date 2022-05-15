@@ -3,8 +3,12 @@ import React from "react";
 const PostStatusFilter = () => {
   return (
     <div className="btn-group">
-      <button>Все</button>
-      <button>Понравилось</button>
+      <button type="button" className="btn btn-primary">
+        Все
+      </button>
+      <button type="button" className="btn btn-outline-secondary id">
+        Понравилось
+      </button>
     </div>
   );
 };
